@@ -1,0 +1,29 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  height: 100vh;
+  background: url(img/bg.jpg) no-repeat center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* background통합 background:배경책 url() no-repeat background-position
+background-size는 통합을 할 수 없음. 하지만 background-size가 있다면 /background-size를 넣음 */
+
+.container {
+  color: #fff;
+  text-align: center;
+}
+.bg {
+  width: 150px;
+  margin: 30px;
+}
+.wrap {
+  padding: 50px;
+  background-color: rgb(231, 201, 255);
+}
+#chance {
+  margin: 30px;
+}
