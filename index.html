@@ -9,18 +9,24 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <div class="wrap">
-        <h3>숫자맞추기게임</h3>
+        <h3>Number Bingo Game</h3>
         <img id="img" class="bg" src="img/뾰로롱.jpg" />
         <div id="result">결과화면 : up / down / bingo</div>
         <div id="chance">남은 찬스 : 5번</div>
 
         <input
           id="user"
-          placeholder="1부터 100까지의 수"
+          placeholder="1부터 100까지의 수를 입력하세요"
           onkeypress="if(event.keyCode == 13) {play()}"
         />
         <button id="play" type="button" class="btn btn-success">시작</button>

@@ -1,8 +1,9 @@
 let user = document.querySelector("#user");
 let playbtn = document.querySelector("#play");
 let resetbtn = document.querySelector("#reset");
-let resul = document.querySelector("#result");
+let result = document.querySelector("#result");
 let chance = document.querySelector("#chance");
+change = document.querySelector("#img");
 let chances = 5;
 let history = [];
 let gameOver = false;
@@ -58,6 +59,7 @@ function play() {
   }
   if (gameOver == true) {
     playbtn.disabled = true;
+    change.src = "img/false.JPG";
   }
 }
 
@@ -68,6 +70,7 @@ function reset() {
   result.textContent = "결과화면 : up / down / bingo";
   gameOver = false;
   chances = 5;
+  playbtn.disabled = false;
   chance.innerHTML = `남은 기회 ${chances}번`;
   history = [];
 }
